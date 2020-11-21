@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 pb.setVisibility(ProgressBar.VISIBLE);
                 // run a background job and once complete 
                 pb.setVisibility(ProgressBar.INVISIBLE);
-                
+
                 
             }
         });
