@@ -19,6 +19,11 @@ allprojects {
         maven { url "https://jitpack.io" }
     }
 }
+ext {
+    appCompatVersion = '1.0.0'
+    designSupportVersion = '1.0.0'
+    recyclerViewVersion = '1.0.0'
+}
 
 task clean(type: Delete) {
     delete rootProject.buildDir

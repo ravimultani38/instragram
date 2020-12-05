@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="7dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivProfyl"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/direct"
+        tools:layout_toLeftOf="@id/tvUsername" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Textview"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:text="roop" />
+
+    <ImageView
+        android:id="@+id/ivImg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/tvUsername"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/ivHeart"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivImg"
+        android:layout_marginTop="7dp"
+        app:srcCompat="@drawable/ufi_heart_icon" />
+
+    <ImageView
+        android:id="@+id/ivComment"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivImg"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/ivHeart"
+        app:srcCompat="@drawable/ufi_comment" />
+
+    <ImageView
+        android:id="@+id/ivShare"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivImg"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/ivComment"
+        app:srcCompat="@drawable/direct" />
+
+    <ImageView
+        android:id="@+id/ivSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivImg"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="93dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="-88dp"
+        android:layout_toRightOf="@id/ivShare"
+        app:srcCompat="@drawable/ufi_save" />
+
+    <TextView
+        android:id="@+id/tvTotalLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivComment"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="7dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivComment"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/tvTotalLikes"
+        android:text="likes"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTotalLikes"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="7dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        tools:text="Hello World!!" />
+
+    <TextView
+        android:id="@+id/lvViewComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDescription"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="7dp"
+        android:text="View all comments"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/lvViewComments"
+        tools:text="3hrs" />
+
+</RelativeLayout>
