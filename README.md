@@ -31,7 +31,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/ravimultani38/instragram/blob/master/walkthrough.gif'' alt='Video Walkthrough' />
+<img src='https://github.com/ravimultani38/instragram/blob/master/walkthrough.gif' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
